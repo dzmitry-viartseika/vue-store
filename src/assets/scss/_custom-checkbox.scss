@@ -1,0 +1,24 @@
+.checkbox {
+  display: none;
+  &:checked + &__fake:after {
+    display: block;
+    width: 10px;
+    height: 10px;
+    content: '';
+    background: $selectedCheckboxBg;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  &__fake {
+    width: 20px;
+    height: 20px;
+    border: 2px solid $selectBorder;
+    display: inline-block;
+    position: relative;
+    &:after {
+
+    }
+  }
+}

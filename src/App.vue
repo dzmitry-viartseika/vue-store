@@ -1,28 +1,53 @@
-<template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<template lang="pug">
+  div#app
+    HeaderTemplate
+    .app-container
+      .app-content
+        .app-content__aside
+          BrandsTemplate
+        .app-content__main
+          LayoutModeTemplate
+          GoodsTemplate
+    FooterTemplate
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import HeaderTemplate from './components/HeaderTemplate.vue';
+import LayoutModeTemplate from './components/LayoutModeTemplate.vue';
+import BrandsTemplate from './components/BrandsTemplate.vue';
+import GoodsTemplate from './components/GoodsTemplate.vue';
+import CartTemplate from './components/CartTemplate.vue';
+import FooterTemplate from './components/FooterTemplate.vue';
+
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
-  }
-}
+    FooterTemplate,
+    HeaderTemplate,
+    CartTemplate,
+    BrandsTemplate,
+    GoodsTemplate,
+    LayoutModeTemplate,
+  },
+};
 </script>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @import "assets/scss/core";
+
+  .app-content {
+    padding-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    &__aside {
+      width: 30%;
+    }
+    &__main {
+      width: 70%;
+    }
+  }
+
 </style>

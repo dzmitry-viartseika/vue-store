@@ -1,0 +1,25 @@
+// Colors HEX
+$MainBgSection: #343a40;
+$mainColor: #000;
+$secondColor: #fff;
+$headerTitleBg: #f8f9fa;
+$headerTitleColor: #212529;
+$selectedCheckboxBg: #1D90FF;
+$selectBorder: #808080;
+
+// Colors RGBA
+
+$borderColor: rgba(0,0,0,.125);
+$cartColor: rgba(255, 255, 255, 0.75);
+$cartFormFooterBg: rgba(0,0,0,.03);
+
+
+  // Fonts
+$global-font: 'Segoe UI',sans-serif;
+
+// Container
+
+.app-container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
