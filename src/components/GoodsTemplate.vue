@@ -1,11 +1,18 @@
 <template lang="pug">
     .app-goods
+      ProductTemplate
 
 </template>
 
 <script>
+
+import ProductTemplate from './Product/ProductTemplate.vue';
+
 export default {
   name: 'GoodsTemplate',
+  components: {
+    ProductTemplate,
+  },
 };
 </script>
 

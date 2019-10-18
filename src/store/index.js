@@ -35,5 +35,35 @@ export default new Vuex.Store({
         id: 7,
       },
     ],
+    goods: [
+      {
+        id: 1,
+        title: 'Apple iPhone 7 Plus 32 GB (Apple Türkiye Garantili)',
+        img: '9801258729522.jpg',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
+        price: '4,241.50',
+      },
+      {
+        id: 2,
+        title: 'Apple iPhone 7 Plus 32 GB (Apple Türkiye Garantili)',
+        img: '9801258729522.jpg',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
+        price: '4,241.50',
+      },
+      {
+        id: 3,
+        title: 'Apple iPhone 7 Plus 32 GB (Apple Türkiye Garantili)',
+        img: '9801258729522.jpg',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
+        price: '4,241.50',
+      },
+      {
+        id: 4,
+        title: 'Apple iPhone 7 Plus 32 GB (Apple Türkiye Garantili)',
+        img: '9801258729522.jpg',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
+        price: '4,241.50',
+      },
+    ],
   },
 });
