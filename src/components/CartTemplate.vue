@@ -24,6 +24,7 @@
           span.app-cart__amount-price 0.00$
 </template>
 
+
 <script>
 
 import { mapState } from 'vuex';
