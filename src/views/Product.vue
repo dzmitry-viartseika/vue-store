@@ -5,24 +5,24 @@
         .app-item-row__promo
           img(src="https://productimages.hepsiburada.net/s/18/280-413/9801258663986.jpg")
         .app-item-row__info
-          .app-item-row__info-title Apple iPhone 7 Plus 32 GB (Apple Türkiye Garantili)
-          .app-item-row__info-price $4,241.50
+          .app-item-row__info-title {{ prod.title }}
+          .app-item-row__info-price {{ prod.price }}
           .app-item-row__info-subtitle Description
-          .app-item-row__info-content Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. Amet
+          .app-item-row__info-content {{ prod.description }}
           .app-item-row__info-subtitle Brand
-          .app-item-row__info-content Apple
+          .app-item-row__info-content {{ prod.brand }}
           .app-item-row__info-subtitle Size
-          .app-item-row__info-content 124.4mm x 59.2mm x 8.97mm (4.9 x 2.33 x 0.35)
+          .app-item-row__info-content {{ prod.size }}
           .app-item-row__info-subtitle Camera
-          .app-item-row__info-content 8mp (3264x2448)
+          .app-item-row__info-content {{ prod.camera }}
           .app-item-row__info-subtitle CPU
-          .app-item-row__info-content 1.3GHz Apple A6
+          .app-item-row__info-content {{ prod.cpu }}
           .app-item-row__info-subtitle Memory
-          .app-item-row__info-content 16GB, 32GB and RAM 1 GB
+          .app-item-row__info-content {{ prod.memory }}
           .app-item-row__info-subtitle Display
-          .app-item-row__info-content 4.0 326 pixel density
+          .app-item-row__info-content {{ prod.display }}
           .app-item-row__info-subtitle Battery
-          .app-item-row__info-content 1480 mAh
+          .app-item-row__info-content {{ prod.battery }}
           .app-item__order
             button.app-item__order-btn Add to Cart
 
@@ -33,10 +33,10 @@ export default {
   name: 'ProductItem',
   props: ['id'],
   computed: {
-    // prod() {
-    //   const id = this.id;
-    //   return this.$store.getters.prodById(id);
-    // },
+    prod() {
+      const idx = this.id;
+      return this.$store.getters.prodById(idx);
+    },
   },
 };
 </script>
