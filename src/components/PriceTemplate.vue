@@ -42,6 +42,7 @@ export default {
         border:1px solid $borderColor;
         box-sizing: border-box;
         width: 100%;
+        padding: 12px 20px;
         &:last-child {
           border-bottom-right-radius: 5px;
           border-bottom-left-radius: 5px;

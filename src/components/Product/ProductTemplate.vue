@@ -2,12 +2,13 @@
     .app-product
       .app-product-row
         .app-product-row__wrap(v-for='(prod,index) in goods' :key="index")
-          .app-product-row__item
-            img.app-product-row__item-img(:src="prod.img")
-            .app-product-row__item-title {{ prod.title }}
-            .app-product-row__item-price {{ prod.price }}
-            .app-product-row__item-desc {{ prod.description }}
-            button.app-product-row__item-btn Add to Cart
+          router-link(:to="'/product/' + prod.id").app-product-row__item-link
+            .app-product-row__item
+              img.app-product-row__item-img(:src="prod.img")
+              .app-product-row__item-title {{ prod.title }}
+              .app-product-row__item-price {{ prod.price }}
+              .app-product-row__item-desc {{ prod.description }}
+              button.app-product-row__item-btn Add to Cart
 </template>
 
 <script>
@@ -55,6 +56,9 @@ export default {
         }
         &:hover {
           box-shadow: -1px 1px 5px 0 rgba(0,0,0,0.75);
+        }
+        &-link {
+          text-decoration: none;
         }
         &-img {
           max-width: 215px;

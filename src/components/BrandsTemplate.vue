@@ -5,8 +5,8 @@
       ul.app-brands__content-list
         li.app-brands__content-item(v-for='(brand,index) in brands' :key="index")
           label.checkbox__label {{ brand.title }}
-            input.checkbox(type="checkbox", :name="brand.title")
             span.checkbox__fake
+            input.checkbox(type="checkbox", :name="brand.title")
 </template>
 
 <script>
@@ -42,6 +42,11 @@ export default {
         border:1px solid $borderColor;
         box-sizing: border-box;
         width: 100%;
+        padding: 12px 20px;
+        justify-content: flex-start;
+        align-items: center;
+        display: flex;
+        position: relative;
         &:last-child {
           border-bottom-right-radius: 5px;
           border-bottom-left-radius: 5px;
