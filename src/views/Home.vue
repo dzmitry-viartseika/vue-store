@@ -3,6 +3,7 @@
     .app-content
       .app-content__aside
         BrandsTemplate
+        PriceTemplate
       .app-content__main
         LayoutModeTemplate
         GoodsTemplate
@@ -13,10 +14,12 @@ import LayoutModeTemplate from '../components/LayoutModeTemplate.vue';
 import BrandsTemplate from '../components/BrandsTemplate.vue';
 import GoodsTemplate from '../components/GoodsTemplate.vue';
 import CartTemplate from '../components/CartTemplate.vue';
+import PriceTemplate from '../components/PriceTemplate.vue';
 
 export default {
   name: 'Home.vue',
   components: {
+    PriceTemplate,
     CartTemplate,
     BrandsTemplate,
     GoodsTemplate,

@@ -18,7 +18,7 @@ export default {
     color: $secondColor;
     font-size: 16px;
     line-height: 24px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     text-align: center;
     height: 70px;

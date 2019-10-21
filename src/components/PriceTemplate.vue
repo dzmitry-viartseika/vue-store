@@ -1,29 +1,29 @@
 <template lang="pug">
-  .app-brands
-    .app-brands__header Brands
-    .app-brands__content
-      ul.app-brands__content-list
-        li.app-brands__content-item(v-for='(brand,index) in brands' :key="index")
-          label.checkbox__label {{ brand.title }}
-            input.checkbox(type="checkbox", :name="brand.title")
+  .app-price
+    .app-price__header Price
+    .app-price__content
+      ul.app-price__content-list
+        li.app-price__content-item
+          label.checkbox__label Low to high
+            input.checkbox
+            span.checkbox__fake
+        li.app-price__content-item
+          label.checkbox__label High to low
+            input.checkbox
             span.checkbox__fake
 </template>
 
 <script>
-import { mapState } from 'vuex';
-
 export default {
-  name: 'BrandsTemplate',
-  computed: mapState(['brands']),
+  name: 'PriceTemplate',
 };
 </script>
 
 <style scoped lang="scss">
-@import "../assets/scss/core.scss";
-  .app-brands {
+  @import "../assets/scss/core.scss";
+  .app-price {
     width: 300px;
     height: auto;
-    margin-bottom: 20px;
     font-family: $global-font;
     &__header {
       background: $headerTitleBg;
