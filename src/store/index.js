@@ -55,7 +55,7 @@ export default new Vuex.Store({
         title: 'Huawei Mate 20 Lite 64 GB (Huawei Türkiye Garantili)',
         img: 'https://productimages.hepsiburada.net/s/18/280-413/9801258663986.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
-        price: '$1,823.66',
+        price: '1,823.66',
         size: '124.4mm x 59.2mm x 8.97mm (4.9 x 2.33 x 0.35)',
         brand: 'Huawei',
         camera: '8mp (3264x2448)',
@@ -318,17 +318,16 @@ export default new Vuex.Store({
       },
 
     ],
-    cartItems: [
-      {
-        id: 1,
-      },
-    ],
+    cartItems: [],
   },
   getters: {
     prodById(state) {
       return prodId => {
         return state.goods.find(prod => prod.id === prodId);
       };
+    },
+    cartItems(state) {
+      return state.cartItems;
     },
   },
 });

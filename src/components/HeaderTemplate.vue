@@ -4,15 +4,17 @@
         .app-header-row
           .app-header-row__logo
             a.app-header-row__logo_link(href="/") Ecommerce
-          .app-header-row__cart
+          router-link.app-header-row__cart(:to="'/cart'")
             span.app-header-row__cart-text Cart
-            span.app-header-row__cart-order (0)
+            span.app-header-row__cart-order ({{ cartItems.length }})
 
 </template>
 
 <script>
+import {mapGetters} from 'vuex';
 export default {
   name: 'HeaderTemplate',
+  computed: mapGetters(['cartItems']),
 };
 </script>
 
@@ -47,6 +49,7 @@ export default {
           display: flex;
           justify-content: center;
           align-items: center;
+          text-decoration: none;
           &-text {
             margin-right: 5px;
           }

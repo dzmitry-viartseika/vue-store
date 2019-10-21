@@ -3,13 +3,13 @@
       .app-cart
         .app-cart__title Shopping cart
         .app-cart__goods(v-if="cartItems.length === 0") There is no item in cart
-        .app-cart-row(v-else)
+        .app-cart-row(v-else)(v-for="(item,index) in cartItem" :key="index")
           .app-cart-row__img
             img(src="https://productimages.hepsiburada.net/s/18/280-413/9801258663986.jpg")
           .app-cart-row__desc
-            .app-cart-row__desc-title Apple iPhone 7 Plus 32 GB
-            .app-cart-row__desc-info Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet!
-          .app-cart-row__price 4,241.50$
+            .app-cart-row__desc-title {{ item.title }}
+            .app-cart-row__desc-info  {{ item.description }}
+          .app-cart-row__price  {{ item.price }}$
             span x
           .app-cart-row__amount
             input(type='number' min='1' max='9' step='1' value='1')
@@ -27,11 +27,11 @@
 
 <script>
 
-import { mapState } from 'vuex';
+import { mapGetters } from 'vuex';
 
 export default {
   name: 'CartTemplate',
-  computed: mapState(['cartItems']),
+  computed: mapGetters(['cartItems']),
 };
 </script>
 <style scoped lang="scss">

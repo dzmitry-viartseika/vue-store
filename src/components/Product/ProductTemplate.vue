@@ -6,9 +6,9 @@
             .app-product-row__item
               img.app-product-row__item-img(:src="prod.img")
               .app-product-row__item-title {{ prod.title }}
-              .app-product-row__item-price {{ prod.price }}
+              .app-product-row__item-price ${{ prod.price }}
               .app-product-row__item-desc {{ prod.description }}
-              button.app-product-row__item-btn Add to Cart
+              button.app-product-row__item-btn(@click.prevent="showAlert(prod)") Add to Cart
 </template>
 
 <script>
@@ -17,8 +17,11 @@ import { mapState } from 'vuex';
 export default {
   name: 'ProductTemplate',
   computed: mapState(['goods']),
-  mounted() {
-    console.log(this.goods);
+  methods: {
+    showAlert(item) {
+      this.$swal('Added to cart!');
+      this.$store.getters.cartItems.push(item);
+    },
   },
 };
 </script>
