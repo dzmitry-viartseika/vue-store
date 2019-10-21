@@ -3,7 +3,7 @@
       .app-cart
         .app-cart__title Shopping cart
         .app-cart__goods(v-if="cartItems.length === 0") There is no item in cart
-        .app-cart-row(v-else)(v-for="(item,index) in cartItem" :key="index")
+        .app-cart-row(v-else)(v-for="(item,index) in cartItems" :key="index")
           .app-cart-row__img
             img(src="https://productimages.hepsiburada.net/s/18/280-413/9801258663986.jpg")
           .app-cart-row__desc
@@ -16,9 +16,7 @@
             .quantity-nav
               .quantity-button.quantity-up +
               .quantity-button.quantity-down -
-          .app-cart-row__delete
-              button
-                font-awesome-icon(icon="trash")
+          .app-cart-row__delete(@click="cancelItem(index)")
         .app-cart__amount
           span.app-cart__amount-total Total price:
           span.app-cart__amount-price 0.00$
@@ -32,6 +30,11 @@ import { mapGetters } from 'vuex';
 export default {
   name: 'CartTemplate',
   computed: mapGetters(['cartItems']),
+  methods: {
+    cancelItem(idx) {
+      this.$store.getters.cartItems.splice(idx, 1);
+    },
+  }
 };
 </script>
 <style scoped lang="scss">
