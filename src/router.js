@@ -48,6 +48,7 @@ export default new Router({
       path: '/product/:id',
       name: 'product',
       component: Product,
+      props: true,
       meta: {
         title: 'About Page - Example App',
         metaTags: [

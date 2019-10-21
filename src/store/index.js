@@ -37,7 +37,7 @@ export default new Vuex.Store({
     ],
     goods: [
       {
-        id: 1,
+        id: '1',
         title: 'Apple iPhone 7 Plus 32 GB (Apple Türkiye Garantili)',
         img: 'https://productimages.hepsiburada.net/s/18/280-413/9801258663986.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
@@ -51,7 +51,7 @@ export default new Vuex.Store({
         battery: '1480 mAh',
       },
       {
-        id: 2,
+        id: '2',
         title: 'Apple iPhone 7 Plus 32 GB (Apple Türkiye Garantili)',
         img: 'https://productimages.hepsiburada.net/s/18/280-413/9801258663986.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
@@ -65,7 +65,7 @@ export default new Vuex.Store({
         battery: '1480 mAh',
       },
       {
-        id: 3,
+        id: '3',
         title: 'Apple iPhone 7 Plus 32 GB (Apple Türkiye Garantili)',
         img: 'https://productimages.hepsiburada.net/s/18/280-413/9801258663986.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
@@ -79,7 +79,7 @@ export default new Vuex.Store({
         battery: '1480 mAh',
       },
       {
-        id: 4,
+        id: '4',
         title: 'Apple iPhone 7 Plus 32 GB (Apple Türkiye Garantili)',
         img: 'https://productimages.hepsiburada.net/s/18/280-413/9801258663986.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
@@ -93,7 +93,7 @@ export default new Vuex.Store({
         battery: '1480 mAh',
       },
       {
-        id: 5,
+        id: '5',
         title: 'Apple iPhone 7 Plus 32 GB (Apple Türkiye Garantili)',
         img: 'https://productimages.hepsiburada.net/s/18/280-413/9801258663986.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
@@ -107,7 +107,7 @@ export default new Vuex.Store({
         battery: '1480 mAh',
       },
       {
-        id: 6,
+        id: '6',
         title: 'Apple iPhone 7 Plus 32 GB (Apple Türkiye Garantili)',
         img: 'https://productimages.hepsiburada.net/s/18/280-413/9801258663986.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
@@ -121,7 +121,7 @@ export default new Vuex.Store({
         battery: '1480 mAh',
       },
       {
-        id: 7,
+        id: '7',
         title: 'Apple iPhone 7 Plus 32 GB (Apple Türkiye Garantili)',
         img: 'https://productimages.hepsiburada.net/s/18/280-413/9801258663986.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
@@ -135,7 +135,7 @@ export default new Vuex.Store({
         battery: '1480 mAh',
       },
       {
-        id: 8,
+        id: '8',
         title: 'Apple iPhone 7 Plus 32 GB (Apple Türkiye Garantili)',
         img: 'https://productimages.hepsiburada.net/s/18/280-413/9801258663986.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
@@ -149,7 +149,7 @@ export default new Vuex.Store({
         battery: '1480 mAh',
       },
       {
-        id: 9,
+        id: '9',
         title: 'Apple iPhone 7 Plus 32 GB (Apple Türkiye Garantili)',
         img: 'https://productimages.hepsiburada.net/s/18/280-413/9801258663986.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
@@ -163,7 +163,7 @@ export default new Vuex.Store({
         battery: '1480 mAh',
       },
       {
-        id: 10,
+        id: '10',
         title: 'Apple iPhone 7 Plus 32 GB (Apple Türkiye Garantili)',
         img: 'https://productimages.hepsiburada.net/s/18/280-413/9801258663986.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
@@ -177,5 +177,17 @@ export default new Vuex.Store({
         battery: '1480 mAh',
       },
     ],
+    cartItems: [
+      {
+        id: 1,
+      },
+    ],
   },
+  // getters: {
+  //   prodById(state) {
+  //     return prodId => {
+  //       return state.goods.find(prod => prod.id === prodId);
+  //     }
+  //   }
+  // }
 });

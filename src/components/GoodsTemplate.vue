@@ -1,17 +1,19 @@
 <template lang="pug">
     .app-goods
       ProductTemplate
-
+      PaginationTemplate
 </template>
 
 <script>
 
 import ProductTemplate from './Product/ProductTemplate.vue';
+import PaginationTemplate from './Pagination/PaginationTemplate.vue';
 
 export default {
   name: 'GoodsTemplate',
   components: {
     ProductTemplate,
+    PaginationTemplate,
   },
 };
 </script>

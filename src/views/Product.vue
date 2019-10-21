@@ -25,11 +25,19 @@
           .app-item-row__info-content 1480 mAh
           .app-item__order
             button.app-item__order-btn Add to Cart
+
 </template>
 
 <script>
 export default {
   name: 'ProductItem',
+  props: ['id'],
+  computed: {
+    // prod() {
+    //   const id = this.id;
+    //   return this.$store.getters.prodById(id);
+    // },
+  },
 };
 </script>
 
