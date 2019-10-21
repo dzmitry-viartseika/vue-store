@@ -4,7 +4,7 @@
         .app-cart__title Shopping cart
         .app-cart__goods(v-if="cartItems.length === 0") There is no item in cart
         .app-cart-row(v-else)(v-for="(item,index) in cartItems" :key="index")
-          .app-cart-row__img
+          router-link.app-cart-row__img(:to="'/product/' + item.id")
             img(src="https://productimages.hepsiburada.net/s/18/280-413/9801258663986.jpg")
           .app-cart-row__desc
             .app-cart-row__desc-title {{ item.title }}
