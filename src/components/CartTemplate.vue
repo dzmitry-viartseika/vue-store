@@ -19,7 +19,8 @@
           .app-cart-row__delete(@click="cancelItem(index)")
         .app-cart__amount
           span.app-cart__amount-total Total price:
-          span.app-cart__amount-price 0.00$
+          span.app-cart__amount-price(v-if="cartItems.length !== 0") {{ fullPrice }}$
+          span.app-cart__amount-price(v-else) 0.00$
 </template>
 
 
@@ -30,6 +31,9 @@ import { mapGetters } from 'vuex';
 export default {
   name: 'CartTemplate',
   computed: mapGetters(['cartItems']),
+    fullPrice() {
+
+    },
   methods: {
     cancelItem(idx) {
       this.$store.getters.cartItems.splice(idx, 1);
@@ -40,7 +44,7 @@ export default {
     orderLess() {
       console.log('-')
     }
-  }
+  },
 };
 </script>
 <style scoped lang="scss">
