@@ -12,10 +12,10 @@
           .app-cart-row__price  {{ item.price }}$
             span x
           .app-cart-row__amount
-            input(type='number' min='1' max='9' step='1' value='1')
+            input(type='number' :value='item.ordered')
             .quantity-nav
-              .quantity-button.quantity-up +
-              .quantity-button.quantity-down -
+              .quantity-button.quantity-up(@click="orderMore(item)") +
+              .quantity-button.quantity-down(@click="orderLess(item)") -
           .app-cart-row__delete(@click="cancelItem(index)")
         .app-cart__amount
           span.app-cart__amount-total Total price:
@@ -34,6 +34,12 @@ export default {
     cancelItem(idx) {
       this.$store.getters.cartItems.splice(idx, 1);
     },
+    orderMore() {
+      console.log('+')
+    },
+    orderLess() {
+      console.log('-')
+    }
   }
 };
 </script>

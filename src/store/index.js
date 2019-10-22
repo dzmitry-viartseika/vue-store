@@ -49,6 +49,7 @@ export default new Vuex.Store({
         memory: '16GB, 32GB and RAM 1 GB',
         display: '4.0 326 pixel density',
         battery: '1480 mAh',
+        ordered: '1',
       },
       {
         id: '2',
@@ -63,6 +64,7 @@ export default new Vuex.Store({
         memory: '16GB, 32GB and RAM 1 GB',
         display: '4.0 326 pixel density',
         battery: '1480 mAh',
+        ordered: '1',
       },
       {
         id: '3',
@@ -77,6 +79,7 @@ export default new Vuex.Store({
         memory: '16GB, 32GB and RAM 1 GB',
         display: '4.0 326 pixel density',
         battery: '1480 mAh',
+        ordered: '1',
       },
       {
         id: '4',
@@ -91,6 +94,7 @@ export default new Vuex.Store({
         memory: '16GB, 32GB and RAM 1 GB',
         display: '4.0 326 pixel density',
         battery: '1480 mAh',
+        ordered: '1',
       },
       {
         id: '5',
@@ -105,6 +109,7 @@ export default new Vuex.Store({
         memory: '16GB, 32GB and RAM 1 GB',
         display: '4.0 326 pixel density',
         battery: '1480 mAh',
+        ordered: '1',
       },
       {
         id: '6',
@@ -119,6 +124,7 @@ export default new Vuex.Store({
         memory: '16GB, 32GB and RAM 1 GB',
         display: '4.0 326 pixel density',
         battery: '1480 mAh',
+        ordered: '1',
       },
       {
         id: '7',
@@ -133,6 +139,7 @@ export default new Vuex.Store({
         memory: '16GB, 32GB and RAM 1 GB',
         display: '4.0 326 pixel density',
         battery: '1480 mAh',
+        ordered: '1',
       },
       {
         id: '8',
@@ -147,6 +154,7 @@ export default new Vuex.Store({
         memory: '16GB, 32GB and RAM 1 GB',
         display: '4.0 326 pixel density',
         battery: '1480 mAh',
+        ordered: '1',
       },
       {
         id: '9',
@@ -161,6 +169,7 @@ export default new Vuex.Store({
         memory: '16GB, 32GB and RAM 1 GB',
         display: '4.0 326 pixel density',
         battery: '1480 mAh',
+        ordered: '1',
       },
       {
         id: '10',
@@ -175,6 +184,7 @@ export default new Vuex.Store({
         memory: '16GB, 32GB and RAM 1 GB',
         display: '4.0 326 pixel density',
         battery: '1480 mAh',
+        ordered: '1',
       },
       {
         id: '11',
@@ -189,6 +199,7 @@ export default new Vuex.Store({
         memory: '16GB, 32GB and RAM 1 GB',
         display: '4.0 326 pixel density',
         battery: '1480 mAh',
+        ordered: '1',
       },
       {
         id: '12',
@@ -203,6 +214,7 @@ export default new Vuex.Store({
         memory: '16GB, 32GB and RAM 1 GB',
         display: '4.0 326 pixel density',
         battery: '1480 mAh',
+        ordered: '1',
       },
       {
         id: '13',
@@ -217,6 +229,7 @@ export default new Vuex.Store({
         memory: '16GB, 32GB and RAM 1 GB',
         display: '4.0 326 pixel density',
         battery: '1480 mAh',
+        ordered: '1',
       },
       {
         id: '14',
@@ -231,6 +244,7 @@ export default new Vuex.Store({
         memory: '16GB, 32GB and RAM 1 GB',
         display: '4.0 326 pixel density',
         battery: '1480 mAh',
+        ordered: '1',
       },
       {
         id: '15',
@@ -245,6 +259,7 @@ export default new Vuex.Store({
         memory: '16GB, 32GB and RAM 1 GB',
         display: '4.0 326 pixel density',
         battery: '1480 mAh',
+        ordered: '1',
       },
       {
         id: '16',
@@ -259,6 +274,7 @@ export default new Vuex.Store({
         memory: '16GB, 32GB and RAM 1 GB',
         display: '4.0 326 pixel density',
         battery: '1480 mAh',
+        ordered: '1',
       },
       {
         id: '17',
@@ -273,6 +289,7 @@ export default new Vuex.Store({
         memory: '16GB, 32GB and RAM 1 GB',
         display: '4.0 326 pixel density',
         battery: '1480 mAh',
+        ordered: '1',
       },
       {
         id: '18',
@@ -287,6 +304,7 @@ export default new Vuex.Store({
         memory: '16GB, 32GB and RAM 1 GB',
         display: '4.0 326 pixel density',
         battery: '1480 mAh',
+        ordered: '1',
       },
       {
         id: '19',
@@ -301,6 +319,7 @@ export default new Vuex.Store({
         memory: '16GB, 32GB and RAM 1 GB',
         display: '4.0 326 pixel density',
         battery: '1480 mAh',
+        ordered: '1',
       },
       {
         id: '20',
@@ -315,6 +334,7 @@ export default new Vuex.Store({
         memory: '16GB, 32GB and RAM 1 GB',
         display: '4.0 326 pixel density',
         battery: '1480 mAh',
+        ordered: '1',
       },
 
     ],
