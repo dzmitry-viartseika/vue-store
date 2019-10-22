@@ -30,10 +30,13 @@ import { mapGetters } from 'vuex';
 
 export default {
   name: 'CartTemplate',
-  computed: mapGetters(['cartItems']),
+  computed: {
+    ...mapGetters(['cartItems']),
     fullPrice() {
-
+      const total = this.cartItems.reduce((prev,next) => prev + next.price,0);
+      return total;
     },
+  },
   methods: {
     cancelItem(idx) {
       this.$store.getters.cartItems.splice(idx, 1);
